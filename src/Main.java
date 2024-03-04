@@ -30,5 +30,31 @@ public class Main {
                 System.out.print(", ");
             }
         }
+        System.out.println("\nЗадание " + task[2]);
+        int j;
+        for (int i = 0; i < newArray.length; i++) {
+            j = newArray.length - i;
+            System.out.print(newArray[--j]);
+            if (i < newArray.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 1; i <= floatArray.length; i++) {
+            j = floatArray.length - i;
+            System.out.print(floatArray[j]);
+            if (i < floatArray.length) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < intArray.length; i++) {
+            j = intArray.length - i;
+            System.out.print(intArray[--j]);
+            if (i < intArray.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
     }
 }
