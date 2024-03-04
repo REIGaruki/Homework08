@@ -33,33 +33,30 @@ public class Main {
             }
         }
         System.out.println("\nЗадание " + task[2]);
-        int j;
-        for (int i = 0; i < newArray.length; i++) {
-            j = newArray.length - i;
-            System.out.print(newArray[--j]);
-            if (i < newArray.length - 1) {
+        for (int i = newArray.length; i > 0;) {
+            System.out.print(newArray[--i]);
+            if (i > 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 1; i <= floatArray.length; i++) {
-            j = floatArray.length - i;
-            System.out.print(floatArray[j]);
-            if (i < floatArray.length) {
+        for (int i = floatArray.length - 1; i >= 0; i--) {
+            System.out.print(floatArray[i]);
+            if (i > 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 0; i < intArray.length; i++) {
-            j = intArray.length - i;
-            System.out.print(intArray[--j]);
-            if (i < intArray.length - 1) {
+        int i = floatArray.length;
+        while (i > 0) {
+            System.out.print(intArray[--i]);
+            if (i > 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
         System.out.println("Задание " + task[3]);
-        for (int i = 0; i < intArray.length; i++) {
+        for (i = 0; i < intArray.length; i++) {
             if (intArray[i] % 2 == 1) {
                 intArray[i]++;
             }
