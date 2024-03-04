@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Массивы");
@@ -56,5 +58,12 @@ public class Main {
             }
         }
         System.out.println();
+        System.out.println("Задание " + task[3]);
+        for (int i = 0; i < intArray.length; i++) {
+            if (intArray[i] % 2 == 1) {
+                intArray[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(intArray));
     }
 }
